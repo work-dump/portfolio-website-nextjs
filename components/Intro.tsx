@@ -11,7 +11,10 @@ import { FaGithubSquare } from "react-icons/fa";
 
 const Intro = () => {
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section
+      id="home"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -84,11 +87,19 @@ const Intro = () => {
           <HiDownload className="opacity-60 group-hover:translate-y-1" />
         </a>
 
-        <a className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10" href="https://www.linkedin.com/in/alekhandro-lagonavarro/" target='_blank'>
+        <a
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10"
+          href="https://www.linkedin.com/in/alekhandro-lagonavarro/"
+          target="_blank"
+        >
           <BsLinkedin />
         </a>
 
-        <a className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950  active:scale-105 transition cursor-pointer border border-black/10" href="https://github.com/Alekhandro24" target='_blank'>
+        <a
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950  active:scale-105 transition cursor-pointer border border-black/10"
+          href="https://github.com/Alekhandro24"
+          target="_blank"
+        >
           <FaGithubSquare />
         </a>
       </motion.div>
