@@ -1,24 +1,45 @@
 "use server";
+
+import ContactFormEmail from "@/email/ContactFormEmail";
+import { getErrorMessage, validateString } from "@/lib/utils";
+import React from "react";
+
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const sendEmail = async (formData: FormData) => {
-  const senderEmail = formData.get("email");
+  const senderEmail = formData.get("senderEmail");
   const message = formData.get("message");
-  if (
-    !senderEmail ||
-    !message ||
-    typeof senderEmail !== "string" ||
-    typeof message !== "string"
-  ) {
-    throw new Error("Missing fields!");
+
+  if (!validateString(senderEmail, 500)) {
+    return {
+      error: "Ivalid sender email",
+    };
+  }
+  if (!validateString(message, 5000)) {
+    return {
+      error: "Ivalid message",
+    };
   }
 
-  resend.emails.send({
-    from: "onboarding@resend.dev",
-    to: "alekhandrofor@gmail.com",
-    subject: "Message from contact form",
-    text: message,
-  });
+  let data;
+
+  try {
+    data = await resend.emails.send({
+      from: "Contact Form <onboarding@resend.dev>",
+      to: "alekhandrofor@gmail.com",
+      subject: "Message from contact form",
+      reply_to: senderEmail as string,
+      react: React.createElement(ContactFormEmail, {
+        message: message as string,
+        senderEmail: senderEmail as string,
+      }),
+    });
+  } catch (error: unknown) {
+    return {
+      error: getErrorMessage(error),
+    };
+  }
+  return { data };
 };
