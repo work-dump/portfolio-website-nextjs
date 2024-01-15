@@ -12,7 +12,7 @@ import "react-vertical-timeline-component/style.min.css";
 import SectionHeading from "./SectionHeading";
 
 export default function Experience() {
-  const { ref } = useSectionInView("Experience");
+  const { ref } = useSectionInView("Experience", 0.4);
   const { theme } = useTheme();
 
   return (
