@@ -1,10 +1,9 @@
+import filmotecaImg from "@/public/filmoteca.jpg";
+import promptopiaImg from "@/public/promptopia.jpg";
+import yummyappImg from "@/public/yummyapp.jpg";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
   {
@@ -35,73 +34,102 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Ultimate Next.js 14 Cource",
+    location: "Online",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "A modern web development  through Next.js through. Routing, authentication, real-time events, and database integration. Optimization UI/UX, handle forms, and an advanced features like a voting system, badges, and reputation. Integration third-party APIs and automate answers with OpenAI. All while focusing on SEO and performance optimization.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2023",
   },
   {
     title: "Full-Stack Developer",
-    location: "Houston, TX",
+    location: "IT School GoIT",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "I've successfully completed FULLSTACK developer course at GoIT.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2022 - 2023",
+  },
+  {
+    title: "Freelance Web developer",
+    location: "Kyiv, Ukraine",
+    description:
+      "Developed responsive and visually stunning websites across various industries, optimized website performance, integrated e-commerce functionality.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023 - present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Yummy App",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "So-yummy is a feature-rich single-page application (SPA) designed to enhance your culinary experience.",
+    tags: [
+      "React",
+      "Redux Toolkit",
+      "MongoDB",
+      "Node.js",
+      "Styled-Components",
+      "Formik",
+      "Mongoose",
+      "Multer",
+    ],
+    imageUrl: yummyappImg,
+    githubUrl: "https://github.com/Alekhandro24/yummy-frontend-project",
+    websiteUrl: "https://demetryj.github.io/yummy-frontend/welcome",
   },
   {
-    title: "rmtDev",
+    title: "Promptopia",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Promptopia is a web application that allows users to discover, create, and share creative prompts.",
+    tags: [
+      "React",
+      "Next.js",
+      "TailwindCss",
+      "Mongodb",
+      "Mongoose",
+      "Nextauth",
+    ],
+    imageUrl: promptopiaImg,
+    githubUrl: "https://github.com/Alekhandro24/project_next_ai_prompt_sharing",
+    websiteUrl:
+      "https://project-next-ai-prompt-sharing-git-main-alekhandro24.vercel.app/",
   },
   {
-    title: "Word Analytics",
+    title: "Filmoteka website",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Filmoteka is a two-page website designed to provide users with access to trending movies, search for movies based on keywords, view movie details, trailers, and create their own library of watched movies or movies to watch.",
+    tags: [
+      "Javascript",
+      "Sass",
+      "Parcel",
+      "Localstorage ",
+      "Themeswitch",
+      "Pagination ",
+    ],
+    imageUrl: filmotecaImg,
+    githubUrl: "https://github.com/Alekhandro24/filmoteka-project",
+    websiteUrl: "https://alekhandro24.github.io/filmoteka-project/",
   },
 ] as const;
 
 export const skillsData = [
   "HTML",
   "CSS",
+  "Saas",
   "JavaScript",
   "TypeScript",
   "React",
+  "Redux",
+  "Redux Toolkit",
   "Next.js",
   "Node.js",
   "Git",
-  "Tailwind",
-  "Prisma",
+  "TailwindCss",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
+  "Docker",
   "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
   "Framer Motion",
+  "MUI",
+  "Styled components",
 ] as const;
