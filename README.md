@@ -1,6 +1,6 @@
 # My portfolio website
 
-<img src="/public/portfolioImg.jpg" width="350" height="250">
+<img src="/public/portfolioImg.jpg" width="450" height="550">
 
 My portfolio website that is made with Next.js, Tailwind CSS, TypeScript, React.Email, Resend and Framer-motion. It has several section such as:
 
