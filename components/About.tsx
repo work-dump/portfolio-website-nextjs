@@ -32,7 +32,7 @@ const About = () => {
         <span className="font-medium">
           React, Next.js, Node.js, and MongoDB
         </span>
-        . I am also familiar with TypeScript, Tailwind, Redux Toolkit. I am
+        . I am also familiar with TypeScript, Tailwind CSS, Redux Toolkit. I am
         always looking to learn new technologies. I am currently looking for a{" "}
         <span className="font-medium">full-time position</span> as a software
         developer.
