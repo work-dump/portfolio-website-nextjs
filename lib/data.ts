@@ -1,4 +1,7 @@
+import eventlyImg from "@/public/evently.jpg";
 import filmotecaImg from "@/public/filmoteca.jpg";
+import pokemonImg from "@/public/pokemon.jpg";
+import portfolioImg from "@/public/portfolioImg.jpg";
 import promptopiaImg from "@/public/promptopia.jpg";
 import yummyappImg from "@/public/yummyapp.jpg";
 import React from "react";
@@ -61,6 +64,41 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Portfolio Website",
+    description:
+      "My portfolio website. It is made with Next.js, Tailwind CSS, TypeScript, React.Email, Resend and Framer-motion.",
+    tags: [
+      "Next.js 13",
+      "TypeScript",
+      "Tailwind CSS",
+      "Context API",
+      "Framer Motion",
+      "React.Email & Resend",
+    ],
+    imageUrl: portfolioImg,
+    githubUrl: "https://github.com/Alekhandro24/portfolio-website-nextjs",
+    websiteUrl: "https://portfolio-website-nextjs-alpha.vercel.app/",
+  },
+  {
+    title: "Pokemon App",
+    description:
+      "Pokemon App is amazing app where you can find a lot of different Pokemons from PokeAPI, compare them, create your own list and even add or delete them from it, see the evolution of Pokemons and find some extra information all about the Pokemons.",
+    tags: [
+      "React Hooks",
+      "React Router",
+      "CSS3 & SCSS",
+      "Redux and Redux Toolkit",
+      "TypeScript",
+      "Firebase",
+      "Firestore",
+      "Axios",
+      "PokeAPI",
+    ],
+    imageUrl: pokemonImg,
+    githubUrl: "https://github.com/Alekhandro24/pokemon-app",
+    websiteUrl: "https://pokemon-app-7142b.web.app/pokemon/1",
+  },
+  {
     title: "Yummy App",
     description:
       "So-yummy is a feature-rich single-page application (SPA) designed to enhance your culinary experience.",
@@ -77,6 +115,24 @@ export const projectsData = [
     imageUrl: yummyappImg,
     githubUrl: "https://github.com/Alekhandro24/yummy-frontend-project",
     websiteUrl: "https://demetryj.github.io/yummy-frontend/welcome",
+  },
+  {
+    title: "Evently Web App",
+    description:
+      "An event organization web app with authentication, event management, search, filtering, categories, checkout, and payments.",
+    tags: [
+      "Next.js 14",
+      "Shadcn",
+      "TypeScript",
+      "Clerk",
+      "Webhooks",
+      "Dropdown & File uploader",
+      "React-Datepicker",
+      "Stripe",
+    ],
+    imageUrl: eventlyImg,
+    githubUrl: "https://github.com/Alekhandro24/events-app-next14",
+    websiteUrl: "https://smart-evently.vercel.app/",
   },
   {
     title: "Promptopia",
@@ -122,14 +178,28 @@ export const skillsData = [
   "React",
   "Redux",
   "Redux Toolkit",
-  "Next.js",
+  "Next.js 14",
+  "Clerk",
   "Node.js",
   "Git",
-  "TailwindCss",
+  "TailwindCSS",
   "MongoDB",
+  "Webhooks",
+  "Zod",
+  "React-Datepicker",
+  "Stripe ",
+  "Context API",
+  "React.Email & Resend",
+  "Firebase",
+  "Material-ui",
+  "Redux persist",
+  "Yup ",
+  "Formik",
+  "Express",
   "Docker",
   "Express",
   "Framer Motion",
+  "Shadcn",
   "MUI",
   "Styled components",
 ] as const;
