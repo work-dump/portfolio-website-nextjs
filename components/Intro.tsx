@@ -2,7 +2,7 @@
 
 import { useActiveSectionContext } from "@/context/ActiveSectionContext";
 import { useSectionInView } from "@/lib/hooks";
-import portfolioImage from "@/public/images/portfolioImage.jpeg";
+import portfolioImage from "@/public/images/portfolioImage.jpg";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
