@@ -2,7 +2,6 @@
 
 import { useActiveSectionContext } from "@/context/ActiveSectionContext";
 import { useSectionInView } from "@/lib/hooks";
-import portfolioImage from "@/public/images/portfolioImage.jpg";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -30,7 +29,7 @@ const Intro = () => {
             }}
           >
             <Image
-              src={portfolioImage}
+              src="/images/portfolioImage.jpg"
               alt="portfolio-image"
               width="192"
               height="192"
