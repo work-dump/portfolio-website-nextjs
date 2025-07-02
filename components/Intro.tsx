@@ -56,15 +56,33 @@ const Intro = () => {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-3xl sm:text-2xl font-extrabold !leading-tight text-gray-900 dark:text-white"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Ivan.</span> I'm a{" "}
-        <span className="font-bold">Versatile AI Engineer</span> with{" "}
-        <span className="font-bold">more than 7 years </span> of experience. I enjoy
-        bringing <span className="italic">ideas to life!</span>. My focus is{" "}
-        <span className="underline">ML/DL & Generative AI</span>.
+        <span className="block">
+          Hello, I'm Ivan.
+        </span>
+        <span className="block mt-4">
+          I'm a{" "}
+          <span className="font-bold">
+            Versatile AI Engineer with 7 years of experience.
+          </span>
+        </span>
+        <span className="block mt-4 text-lg sm:text-2xl text-gray-700 dark:text-gray-300">
+          <span>I may not be good at everything, but</span>
+          <span className="ml-2 font-bold text-purple-700 dark:text-purple-400 text-xl sm:text-2xl animate-pulse">
+            bringing ideas to life
+          </span>
+          <span className="font-bold text-purple-700 dark:text-purple-400 text-xl sm:text-2xl">!</span>
+        </span>
+        <span className="block mt-4  sm:text-2xl">
+          My focus is{" "}
+          <span className="bg-purple-200 dark:bg-purple-600 px-2 py-1 rounded font-bold text-gray-900 dark:text-white shadow-sm">
+            ML/DL &amp; Generative AI
+          </span>
+          .
+        </span>
       </motion.h1>
 
       <motion.div
