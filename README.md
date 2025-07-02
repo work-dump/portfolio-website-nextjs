@@ -40,7 +40,7 @@ A big thank [Wesley (ByteGrad)](https://github.com/ByteGrad) for your tutorial o
 ## Contact Information
 
 - **Linkedin:**
-  [alekhandro-lagonavarro](https://www.linkedin.com/in/alekhandro-lagonavarro/)
-- **GitHub:** [Alekhandro24](https://github.com/Alekhandro24)
-- **Tel:** [+380507695110](+380507695110)
-- **Email:** [lagoalekhandro@gmail.com](https://www.gmail.com)
+  [Ivan-Vargas](https://www.linkedin.com/in/ivan-vargas-4129b426a)
+- **GitHub:** [Ivan Vargas](https://github.com/work-dump)
+- **Tel:** [+14782002770](+4782002770)
+- **Email:** [i.vargas214@gmail.com](https://www.gmail.com)

@@ -18,33 +18,21 @@ const About = () => {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a Master in{" "}
-        <span className="font-medium">Tourism and Hospitality management</span>,
-        i worked as a teacher of latin american dance and since 2014 as Artistic
-        director of Lago Dance school. Since the beginning of full-scale war in
-        2022 i decided to make a bold career shift and enrolled in an IT School
-        GoIT, and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript, Tailwind CSS, Redux Toolkit. I am
-        always looking to learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        Passionate{" "}
+        <span className="font-medium">AI/ML Engineer</span>
+        with 7+ years of hands-on experience transforming complex data 
+        into intelligent solutions that drive real business impact. 
+        Spanning computer vision systems, NLP applications, and generative 
+        AI solutions, I thrive on tackling challenging problems 
+        at the intersection of cutting-edge technology and practical 
+        applications
       </p>
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy dancing
-        latin american dance, watching movies, studying english and cooking. I
-        also enjoy{" "}
+        I love {" "}
+        <span className="italic">challenges</span>, and learn from them{" "}
         <span className="font-medium">
-          learning history, business and philosophy
+          Let's build something together!
         </span>
-        .
       </p>
     </motion.section>
   );

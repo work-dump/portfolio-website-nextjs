@@ -76,7 +76,7 @@ export const projectsData = [
       "React.Email & Resend",
     ],
     imageUrl: portfolioImg,
-    githubUrl: "https://github.com/Alekhandro24/portfolio-website-nextjs",
+    githubUrl: "https://github.com/work-dump/portfolio-website-nextjs",
     websiteUrl: "https://portfolio-website-nextjs-alpha.vercel.app/",
   },
   {
@@ -95,7 +95,7 @@ export const projectsData = [
       "PokeAPI",
     ],
     imageUrl: pokemonImg,
-    githubUrl: "https://github.com/Alekhandro24/pokemon-app",
+    githubUrl: "https://github.com/work-dump/pokemon-app",
     websiteUrl: "https://pokemon-app-7142b.web.app/pokemon/1",
   },
   {
@@ -113,7 +113,7 @@ export const projectsData = [
       "Multer",
     ],
     imageUrl: yummyappImg,
-    githubUrl: "https://github.com/Alekhandro24/yummy-frontend-project",
+    githubUrl: "https://github.com/work-dump/yummy-frontend-project",
     websiteUrl: "https://demetryj.github.io/yummy-frontend/welcome",
   },
   {
@@ -131,7 +131,7 @@ export const projectsData = [
       "Stripe",
     ],
     imageUrl: eventlyImg,
-    githubUrl: "https://github.com/Alekhandro24/events-app-next14",
+    githubUrl: "https://github.com/work-dump/events-app-next14",
     websiteUrl: "https://smart-evently.vercel.app/",
   },
   {
@@ -147,9 +147,9 @@ export const projectsData = [
       "Nextauth",
     ],
     imageUrl: promptopiaImg,
-    githubUrl: "https://github.com/Alekhandro24/project_next_ai_prompt_sharing",
+    githubUrl: "https://github.com/work-dump/project_next_ai_prompt_sharing",
     websiteUrl:
-      "https://project-next-ai-prompt-sharing-git-main-alekhandro24.vercel.app/",
+      "https://project-next-ai-prompt-sharing-git-main-github.com/work-dump.vercel.app/",
   },
   {
     title: "Filmoteka website",
@@ -164,8 +164,8 @@ export const projectsData = [
       "Pagination ",
     ],
     imageUrl: filmotecaImg,
-    githubUrl: "https://github.com/Alekhandro24/filmoteka-project",
-    websiteUrl: "https://alekhandro24.github.io/filmoteka-project/",
+    githubUrl: "https://github.com/work-dump/filmoteka-project",
+    websiteUrl: "https://work-dump.github.io/filmoteka-project/",
   },
 ] as const;
 
