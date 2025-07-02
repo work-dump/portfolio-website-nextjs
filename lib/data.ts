@@ -37,28 +37,36 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Ultimate Next.js 14 Cource",
-    location: "Online",
+    title: "Senior Software Engineer",
+    location: "Velocity Data Solutions, Austin, TX",
     description:
-      "A modern web development  through Next.js through. Routing, authentication, real-time events, and database integration. Optimization UI/UX, handle forms, and an advanced features like a voting system, badges, and reputation. Integration third-party APIs and automate answers with OpenAI. All while focusing on SEO and performance optimization.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2023",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "IT School GoIT",
-    description:
-      "I've successfully completed FULLSTACK developer course at GoIT.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2022 - 2023",
-  },
-  {
-    title: "Freelance Web developer",
-    location: "Kyiv, Ukraine",
-    description:
-      "Developed responsive and visually stunning websites across various industries, optimized website performance, integrated e-commerce functionality.",
+      "Architected scalable ML platforms and real-time analytics solutions for 50,000+ users, leading MLOps, model deployment, and team mentorship in a cloud-native environment.",
     icon: React.createElement(CgWorkAlt),
-    date: "2023 - present",
+    date: "Mar 2022 – Present",
+  },
+  {
+    title: "Machine Learning Engineer",
+    location: "BorderTech Analytics, El Paso, TX",
+    description:
+      "Developed computer vision and time series models for supply chain optimization, building robust MLOps pipelines and real-time data processing systems.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Jun 2020 – Feb 2022",
+  },
+  {
+    title: "Junior Data Scientist",
+    location: "Southwest Credit Union, El Paso, TX",
+    description:
+      "Built predictive models and automated analytics pipelines for financial risk assessment, delivering actionable insights and interactive dashboards.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Aug 2018 – May 2020",
+  },
+  {
+    title: "B.Sc. Computer Science, Software Engineering",
+    location: "University of Texas at Austin",
+    description:
+      "Graduated with a major in Software Engineering and a minor in Artificial Intelligence.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Aug 2018 – May 2022",
   },
 ] as const;
 
