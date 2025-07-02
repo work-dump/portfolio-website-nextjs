@@ -62,9 +62,9 @@ const Intro = () => {
       >
         <span className="font-bold">Hello, I'm Ivan.</span> I'm a{" "}
         <span className="font-bold">Versatile AI Engineer</span> with{" "}
-        <span className="font-bold">more than 7 years </span> of experience. I enjoy
-        bringing <span className="italic">ideas to life!</span>. My focus is{" "}
-        <span className="underline">ML/DL & Generative AI</span>.
+        <span className="font-bold">more than 7 years </span> of experience. Am not good at anything but
+        <span className="italic"> bringing ideas to life!</span>{" "}
+        <span className="block">My focus is ML/DL & Generative AI</span>.
       </motion.h1>
 
       <motion.div
