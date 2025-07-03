@@ -55,22 +55,20 @@ const Project = ({
             {description}
           </p>
           <ul className="flex flex-wrap mt-10 gap-2 sm:mt-auto">
-            {tags.map((tag, index) => (
-              <li
-                className="bg-primary px-3 py-1 text-[0.7rem] uppercase tracking-wider text-primary-foreground rounded-full"
-                key={index}
-              >
+            {tags.map((tag) => (
+              <span key={tag} className="border border-primary/40 text-xs px-2 py-1 rounded-full text-primary/80 bg-transparent">
                 {tag}
-              </li>
+              </span>
             ))}
           </ul>
         </div>
 
-        <Image
-          src={imageUrl}
-          alt="Project I worked on"
-          quality={95}
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+        <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+          <Image
+            src={imageUrl}
+            alt="Project I worked on"
+            quality={95}
+            className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
         transition 
         group-hover:scale-[1.04]
         group-hover:-translate-x-3
@@ -82,7 +80,8 @@ const Project = ({
         group-even:group-hover:rotate-2
 
         group-even:right-[initial] group-even:-left-40"
-        />
+          />
+        </a>
       </section>
     </motion.div>
   );

@@ -19,7 +19,7 @@ function BlogCard({ post }: { post: (typeof blogPostsData)[number] }) {
     <motion.div
       ref={ref}
       style={{ scale: scaleProgress, opacity: opacityProgress }}
-      className="transition-shadow hover:shadow-lg"
+      className="transition-shadow hover:shadow-2xl hover:scale-[1.03] shadow-lg"
     >
       <Card>
         <CardHeader>
@@ -32,7 +32,7 @@ function BlogCard({ post }: { post: (typeof blogPostsData)[number] }) {
         <CardContent>
           <div className="flex flex-wrap gap-2 mb-2">
             {post.tags.map((tag) => (
-              <span key={tag} className="bg-muted text-xs px-2 py-1 rounded-full text-muted-foreground">
+              <span key={tag} className="border border-primary/40 text-xs px-2 py-1 rounded-full text-primary/80 bg-background">
                 {tag}
               </span>
             ))}

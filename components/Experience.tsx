@@ -22,18 +22,22 @@ export default function Experience() {
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
+              className="timeline-element-hover"
               contentStyle={{
                 background:
                   theme === "light" ? "#f3f4f6" : "rgba(255,255,255,0.05)",
                 boxShadow: "none",
-                border: "1px solid rgba(0, 0, 0, 0.05)",
+                border: theme === "light"
+                  ? "1.5px solid #bfc7d1"
+                  : "1.5px solid rgba(255,255,255,0.08)",
                 textAlign: "left",
                 padding: "1.3rem 2rem",
+                transition: "box-shadow 0.2s, border-color 0.2s, transform 0.2s",
               }}
               contentArrowStyle={{
                 borderRight:
                   theme == "light"
-                    ? "0.4rem solid #9ca3af"
+                    ? "0.4rem solid #bfc7d1"
                     : "0.4rem solidvrgba(255,255,255,0.5)",
               }}
               date={item.date}

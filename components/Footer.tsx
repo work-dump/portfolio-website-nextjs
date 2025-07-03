@@ -4,11 +4,6 @@ const Footer = () => {
       <small className="mb-2 block text-xs">
         &copy; 2025 Ivan Vargas. All rights reserved.
       </small>
-      <p className="text-xs">
-        <span className="font-semibold">About this website:</span> built with
-        Shadcn & Next.js (App Router & Server Action), TypeScript, Tailwind CSS,
-        Framer Motion, React Email & Resend, Vercel hosting.
-      </p>
     </footer>
   );
 };

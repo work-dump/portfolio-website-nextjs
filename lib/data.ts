@@ -34,6 +34,10 @@ export const links = [
     hash: "#experience",
   },
   {
+    name: "Certifications",
+    hash: "#certifications",
+  },
+  {
     name: "Contact",
     hash: "#contact",
   },
@@ -77,18 +81,16 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "PDFChat",
+    title: "ChatPDF",
     description:
-      "PDFChat is an app that enables chatting with PDF documents using Retrieval-Augmented Generation (RAG) techniques. The UI is built with Streamlit, ChromaDB is used as the vector database, FAISS for similarity search, and OpenAI powers the language engine.",
+      "ChatPDF is an app that enables chatting with PDF documents using RAG techniques. Leveraged FAISS, ChromaDB and OpenAI's GPT model to build chat engine.",
     tags: [
       "Streamlit",
-      "Python",
       "RAG",
       "ChromaDB",
       "FAISS",
       "OpenAI",
       "LLM",
-      "PDF",
     ],
   
     imageUrl: ragImg,
@@ -135,7 +137,7 @@ export const projectsData = [
   {
     title: "Promptopia",
     description:
-      "Promptopia is an AI-powered web application that enables users to discover, generate, and share creative prompts using advanced language models. Users can leverage AI to create unique prompts, explore community submissions, and collaborate on prompt engineering.",
+      "AI-powered application that enables users to discover, generate, and share creative prompts using advanced LMs.",
     tags: [
       "AI",
       "LLM",
@@ -159,6 +161,7 @@ export const skillsData = [
   "Python",
   "R",
   "C++",
+  "Keras",
   "Machine Learning",
   "Deep Learning",
   "Time Series Forecasting",
@@ -167,7 +170,7 @@ export const skillsData = [
   "Reinforcement Learning",
   "PyTorch",
   "Tensorflow",
-  "Keras",
+  "ONNX",
   "Scikit-learn",
   "Pandas",
   "Numpy",
@@ -178,15 +181,14 @@ export const skillsData = [
   "Docker",
   "FastAPI",
   "Vector Databases",
+  "RAG",
   "Git",
+  "TensorRT",
   "Langchain & LangGraph",
   "LlamaIndex",
   "Prompt Engineering",
-  "RAG",
   "Computer Vision",
   "Model Distillation",
-  "ONNX",
-  "TensorRT",
 
 ] as const;
 
@@ -225,5 +227,36 @@ export const blogPostsData = [
     date: "2025-05-01",
     tags: ["FastAPI", "WebSockets", "Python", "Real-Time AI"],
     url: "#",
+  },
+] as const;
+
+export const certificationsData = [
+  {
+    title: "Deep Learning Specialization",
+    issuer: "DeepLearning.AI / Coursera",
+    date: "2023-08-15",
+    imageUrl: "/DLCert.jpg",
+    link: "https://coursera.org/verify/deep-learning-specialization",
+  },
+  {
+    title: "AWS Certified Machine Learning – Specialty",
+    issuer: "Amazon Web Services",
+    date: "2022-12-10",
+    imageUrl: "/AWSCert.jpg",
+    link: "https://aws.amazon.com/certification/certified-machine-learning-specialty/",
+  },
+  {
+    title: "TensorFlow Developer Certificate",
+    issuer: "TensorFlow / Google",
+    date: "2022-05-20",
+    imageUrl: "/MLCert.jpg",
+    link: "https://www.tensorflow.org/certificate",
+  },
+  {
+    title: "Generative AI with LLMs",
+    issuer: "DeepLearning.AI / OpenAI",
+    date: "2024-03-01",
+    imageUrl: "/GenAICert.jpg",
+    link: "https://www.deeplearning.ai/short-courses/generative-ai-with-llms/",
   },
 ] as const;
