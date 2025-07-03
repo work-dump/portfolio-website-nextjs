@@ -37,14 +37,6 @@ function BlogCard({ post }: { post: (typeof blogPostsData)[number] }) {
               </span>
             ))}
           </div>
-          <a
-            href={post.url}
-            className="text-primary hover:underline text-sm font-medium"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read more →
-          </a>
         </CardContent>
       </Card>
     </motion.div>
