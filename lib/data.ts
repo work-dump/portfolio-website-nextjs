@@ -22,6 +22,10 @@ export const links = [
     hash: "#projects",
   },
   {
+    name: "Blogs",
+    hash: "#blog",
+  },
+  {
     name: "Skills",
     hash: "#skills",
   },
@@ -190,12 +194,12 @@ export const blogPostsData = [
   {
     title: "How to Build a Portfolio with Next.js and shadcn/ui",
     summary: "A step-by-step guide to building a modern, themeable portfolio using Next.js 13, shadcn/ui, and Tailwind CSS.",
-    date: "2024-05-01",
+    date: "2025-07-01",
     tags: ["Next.js", "shadcn/ui", "Tailwind CSS"],
     url: "#",
   },
   {
-    title: "Dark Mode Best Practices in 2024",
+    title: "Dark Mode Best Practices in 2025",
     summary: "Learn how to implement robust, accessible dark mode in your React and Next.js apps using next-themes and CSS variables.",
     date: "2024-04-15",
     tags: ["Dark Mode", "React", "CSS"],
@@ -204,7 +208,7 @@ export const blogPostsData = [
   {
     title: "Deploying to Vercel: Tips & Tricks",
     summary: "Optimize your Next.js deployment workflow and get the most out of Vercel's platform.",
-    date: "2024-03-28",
+    date: "2025-07-03",
     tags: ["Vercel", "Deployment", "Next.js"],
     url: "#",
   },
