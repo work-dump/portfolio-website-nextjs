@@ -1,9 +1,9 @@
 import eventlyImg from "@/public/evently.jpg";
 import filmotecaImg from "@/public/filmoteca.jpg";
-import pokemonImg from "@/public/pokemon.jpg";
-import portfolioImg from "@/public/portfolioImg.jpg";
+import lidarImg from "@/public/lidarImg.jpg";
+import churnImg from "@/public/churnImg.jpg";
 import promptopiaImg from "@/public/promptopia.jpg";
-import yummyappImg from "@/public/yummyapp.jpg";
+import ragImg from "@/public/ragImg.jpg";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
@@ -73,109 +73,81 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Portfolio Website",
+    title: "PDFChat",
     description:
-      "My portfolio website. It is made with Next.js, Tailwind CSS, TypeScript, React.Email, Resend and Framer-motion.",
+      "PDFChat is an app that enables chatting with PDF documents using Retrieval-Augmented Generation (RAG) techniques. The UI is built with Streamlit, ChromaDB is used as the vector database, FAISS for similarity search, and OpenAI powers the language engine.",
     tags: [
-      "Next.js 13",
-      "TypeScript",
-      "Tailwind CSS",
-      "Context API",
-      "Framer Motion",
-      "React.Email & Resend",
+      "Streamlit",
+      "Python",
+      "RAG",
+      "ChromaDB",
+      "FAISS",
+      "OpenAI",
+      "LLM",
+      "PDF",
     ],
-    imageUrl: portfolioImg,
-    githubUrl: "https://github.com/work-dump/portfolio-website-nextjs",
-    websiteUrl: "https://portfolio-website-nextjs-alpha.vercel.app/",
+  
+    imageUrl: ragImg,
+    githubUrl: "https://github.com/work-dump/pdfchat",
+    websiteUrl: "https://pdfchat-ragsys.streamlit.app/",
   },
   {
-    title: "Pokemon App",
+    title: "Bank Churn Predictor",
     description:
-      "Pokemon App is amazing app where you can find a lot of different Pokemons from PokeAPI, compare them, create your own list and even add or delete them from it, see the evolution of Pokemons and find some extra information all about the Pokemons.",
+      "Analyzed customer demographics, transaction history, and account activity to identify customers likely to leave.",
     tags: [
-      "React Hooks",
-      "React Router",
-      "CSS3 & SCSS",
-      "Redux and Redux Toolkit",
-      "TypeScript",
-      "Firebase",
-      "Firestore",
-      "Axios",
-      "PokeAPI",
+      "Python",
+      "ML",
+      "Tableau",
+      "Ensemble Methods",
+      "LSTM",
+      "Fastapi",
+      "XGBoost",
+      "Pandas",
     ],
-    imageUrl: pokemonImg,
-    githubUrl: "https://github.com/work-dump/pokemon-app",
-    websiteUrl: "https://pokemon-app-7142b.web.app/pokemon/1",
+    imageUrl: churnImg,
+    githubUrl: "https://github.com/work-dump/bank-churn-predictor",
+    websiteUrl: "https://github.com/work-dump/bank-churn-predictor",
   },
   {
-    title: "Yummy App",
+    title: "Lidar 3D Reconstruction",
     description:
-      "So-yummy is a feature-rich single-page application (SPA) designed to enhance your culinary experience.",
+      "Developed a 3D reconstruction system using Lidar sensors mounted on a drone: SLAM, 3D visualization.",
     tags: [
-      "React",
-      "Redux Toolkit",
-      "MongoDB",
-      "Node.js",
-      "Styled-Components",
-      "Formik",
-      "Mongoose",
-      "Multer",
+      "Lidar",
+      "SLAM",
+      "ROS",
+      "C++",
+      "Python",
+      "Jetson",
+      "Open3D",
+      "3D Reconstruction",
     ],
-    imageUrl: yummyappImg,
-    githubUrl: "https://github.com/work-dump/yummy-frontend-project",
-    websiteUrl: "https://demetryj.github.io/yummy-frontend/welcome",
+    imageUrl: lidarImg,
+    githubUrl: "https://github.com/work-dump/jetson-r3live",
+    websiteUrl: "https://youtu.be/4rjrrLgL3nk",
   },
-  {
-    title: "Evently Web App",
-    description:
-      "An event organization web app with authentication, event management, search, filtering, categories, checkout, and payments.",
-    tags: [
-      "Next.js 14",
-      "Shadcn",
-      "TypeScript",
-      "Clerk",
-      "Webhooks",
-      "Dropdown & File uploader",
-      "React-Datepicker",
-      "Stripe",
-    ],
-    imageUrl: eventlyImg,
-    githubUrl: "https://github.com/work-dump/events-app-next14",
-    websiteUrl: "https://smart-evently.vercel.app/",
-  },
+  
   {
     title: "Promptopia",
     description:
-      "Promptopia is a web application that allows users to discover, create, and share creative prompts.",
+      "Promptopia is an AI-powered web application that enables users to discover, generate, and share creative prompts using advanced language models. Users can leverage AI to create unique prompts, explore community submissions, and collaborate on prompt engineering.",
     tags: [
-      "React",
-      "Next.js",
-      "TailwindCss",
-      "Mongodb",
-      "Mongoose",
-      "Nextauth",
+      "AI",
+      "LLM",
+      "FastAPI",
+      "Gen AI",
+      "Prompt Engineering", 
+      "OpenAI API",
+      "Python",
+      "ML"
     ],
     imageUrl: promptopiaImg,
     githubUrl: "https://github.com/work-dump/project_next_ai_prompt_sharing",
     websiteUrl:
       "https://project-next-ai-prompt-sharing-git-main-github.com/work-dump.vercel.app/",
   },
-  {
-    title: "Filmoteka website",
-    description:
-      "Filmoteka is a two-page website designed to provide users with access to trending movies, search for movies based on keywords, view movie details, trailers, and create their own library of watched movies or movies to watch.",
-    tags: [
-      "Javascript",
-      "Sass",
-      "Parcel",
-      "Localstorage ",
-      "Themeswitch",
-      "Pagination ",
-    ],
-    imageUrl: filmotecaImg,
-    githubUrl: "https://github.com/work-dump/filmoteka-project",
-    websiteUrl: "https://work-dump.github.io/filmoteka-project/",
-  },
+  
 ] as const;
 
 export const skillsData = [
@@ -212,4 +184,28 @@ export const skillsData = [
   "ONNX",
   "TensorRT",
 
+] as const;
+
+export const blogPostsData = [
+  {
+    title: "How to Build a Portfolio with Next.js and shadcn/ui",
+    summary: "A step-by-step guide to building a modern, themeable portfolio using Next.js 13, shadcn/ui, and Tailwind CSS.",
+    date: "2024-05-01",
+    tags: ["Next.js", "shadcn/ui", "Tailwind CSS"],
+    url: "#",
+  },
+  {
+    title: "Dark Mode Best Practices in 2024",
+    summary: "Learn how to implement robust, accessible dark mode in your React and Next.js apps using next-themes and CSS variables.",
+    date: "2024-04-15",
+    tags: ["Dark Mode", "React", "CSS"],
+    url: "#",
+  },
+  {
+    title: "Deploying to Vercel: Tips & Tricks",
+    summary: "Optimize your Next.js deployment workflow and get the most out of Vercel's platform.",
+    date: "2024-03-28",
+    tags: ["Vercel", "Deployment", "Next.js"],
+    url: "#",
+  },
 ] as const;
