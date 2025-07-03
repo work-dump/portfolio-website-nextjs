@@ -29,7 +29,7 @@ const About = () => {
       </p>
       <p>
         I love {" "}
-        <span className="italic">challenges</span>, and learning from them.{" "}
+        <span className="italic">challenges</span> and learning from them.{" "}
         <span className="font-medium">
           Let's build something together!
         </span>
