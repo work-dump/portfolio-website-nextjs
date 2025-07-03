@@ -28,9 +28,9 @@ const Contact = () => {
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:lagoalekhandro@gmail.com">
-          lagoalekhandro@gmail.com
+          hey03.aiza3@gmail.com
         </a>
-        , <span className="font-semibold">+380507695110</span> or through this
+        , <span className="font-semibold">+14782002770</span> or through this
         form.
       </p>
 

@@ -90,7 +90,7 @@ const Intro = () => {
         </Button>
 
         <Button asChild variant="outline" className="group bg-background text-foreground px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack">
-          <a href="/Ivan Vargas_Resume.pdf" download>
+          <a href="/Ivan Vargas_Resume.pdf" target="_blank" rel="noopener noreferrer">
             Download CV{" "}
             <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
           </a>
