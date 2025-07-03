@@ -2,10 +2,10 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ThemeSwitch from "@/components/ThemeSwitch";
 import ActiveSectionContextProvider from "@/context/ActiveSectionContext";
-import ThemeContextProvider from "@/context/ThemeContext";
 import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
+import { ThemeProvider } from "next-themes";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,12 +23,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
+        className={`${inter.className} bg-background text-foreground relative pt-28 sm:pt-36`}
       >
-        <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]"></div>
-        <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
-
-        <ThemeContextProvider>
+        {/* Blurred gradient backgrounds, as in the original design */}
+        <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[14rem] sm:w-[68.75rem] dark:bg-[#946263]"></div>
+        <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[14rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <ActiveSectionContextProvider>
             <Header />
             {children}
@@ -37,7 +37,7 @@ export default function RootLayout({
             <Toaster position="top-right" />
             <ThemeSwitch />
           </ActiveSectionContextProvider>
-        </ThemeContextProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

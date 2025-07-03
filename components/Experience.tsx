@@ -1,6 +1,6 @@
 "use client";
 
-import { useTheme } from "@/context/ThemeContext";
+import { useTheme } from "next-themes";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import React from "react";

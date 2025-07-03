@@ -8,6 +8,7 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
+import { Button } from "@/components/ui/button";
 
 const Intro = () => {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
@@ -75,42 +76,43 @@ const Intro = () => {
           delay: 0.1,
         }}
       >
-        <Link
-          href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-          onClick={() => {
-            setActiveSection("Contact");
-            setTimeOfLastClick(Date.now());
-          }}
-        >
-          Contact me here{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-        </Link>
+        <Button asChild className="group bg-primary text-primary-foreground px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-primary/90 active:scale-105 transition">
+          <Link
+            href="#contact"
+            onClick={() => {
+              setActiveSection("Contact");
+              setTimeOfLastClick(Date.now());
+            }}
+          >
+            Contact me here{" "}
+            <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          </Link>
+        </Button>
 
-        <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="/Ivan Vargas_Resume.pdf"
-          download
-        >
-          Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-        </a>
+        <Button asChild variant="outline" className="group bg-background text-foreground px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack">
+          <a href="/Ivan Vargas_Resume.pdf" download>
+            Download CV{" "}
+            <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          </a>
+        </Button>
 
-        <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/ivan-vargas-4129b426a/"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
+        <Button asChild variant="outline" className="bg-background text-foreground p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack">
+          <a
+            href="https://www.linkedin.com/in/ivan-vargas-4129b426a/"
+            target="_blank"
+          >
+            <BsLinkedin />
+          </a>
+        </Button>
 
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/work-dump"
-          target="_blank"
-        >
-          <FaGithubSquare />
-        </a>
+        <Button asChild variant="outline" className="bg-background text-foreground p-4 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack">
+          <a
+            href="https://github.com/work-dump"
+            target="_blank"
+          >
+            <FaGithubSquare />
+          </a>
+        </Button>
       </motion.div>
     </section>
   );
