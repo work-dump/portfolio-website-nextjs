@@ -188,7 +188,7 @@ export const skillsData = [
   "Prompt Engineering",
   "Model Distillation",
   "RAG",
-  "NVidia",
+  "Nvidia",
   "ROS",
   "Jetson"
 
