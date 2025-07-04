@@ -76,43 +76,48 @@ const Intro = () => {
           delay: 0.1,
         }}
       >
-        <Button asChild className="group bg-primary text-primary-foreground px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-primary/90 active:scale-105 transition">
-          <Link
-            href="#contact"
-            onClick={() => {
-              setActiveSection("Contact");
-              setTimeOfLastClick(Date.now());
-            }}
-          >
-            Contact me here{" "}
-            <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-          </Link>
-        </Button>
+        {/* Main action buttons row: always side by side */}
+        <div className="flex flex-row gap-2 w-full sm:w-auto">
+          <Button asChild className="group bg-primary text-primary-foreground px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-primary/90 active:scale-105 transition">
+            <Link
+              href="#contact"
+              onClick={() => {
+                setActiveSection("Contact");
+                setTimeOfLastClick(Date.now());
+              }}
+            >
+              Contact me here{" "}
+              <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+            </Link>
+          </Button>
 
-        <Button asChild variant="outline" className="group bg-background text-foreground px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack">
-          <a href="/Ivan Vargas_Resume.pdf" target="_blank" rel="noopener noreferrer">
-            Download CV{" "}
-            <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-          </a>
-        </Button>
+          <Button asChild variant="outline" className="group bg-background text-foreground px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack">
+            <a href="/Ivan Vargas_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              Download CV{" "}
+              <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+            </a>
+          </Button>
+        </div>
+        {/* Social buttons row: always side by side, below on mobile */}
+        <div className="flex flex-row gap-2 mt-2 sm:mt-0">
+          <Button asChild variant="outline" className="bg-background text-foreground p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack">
+            <a
+              href="https://www.linkedin.com/in/ivan-vargas-4129b426a/"
+              target="_blank"
+            >
+              <BsLinkedin />
+            </a>
+          </Button>
 
-        <Button asChild variant="outline" className="bg-background text-foreground p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack">
-          <a
-            href="https://www.linkedin.com/in/ivan-vargas-4129b426a/"
-            target="_blank"
-          >
-            <BsLinkedin />
-          </a>
-        </Button>
-
-        <Button asChild variant="outline" className="bg-background text-foreground p-4 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack">
-          <a
-            href="https://github.com/work-dump"
-            target="_blank"
-          >
-            <FaGithubSquare />
-          </a>
-        </Button>
+          <Button asChild variant="outline" className="bg-background text-foreground p-4 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack">
+            <a
+              href="https://github.com/work-dump"
+              target="_blank"
+            >
+              <FaGithubSquare />
+            </a>
+          </Button>
+        </div>
       </motion.div>
     </section>
   );
