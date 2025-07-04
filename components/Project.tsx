@@ -81,7 +81,7 @@ const Project = ({
           </div>
         </div>
 
-        <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+        <a href={websiteUrl} target="_blank" rel="noopener noreferrer">
           <Image
             src={imageUrl}
             alt="Project I worked on"
