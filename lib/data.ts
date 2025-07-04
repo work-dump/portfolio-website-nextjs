@@ -91,7 +91,7 @@ export const projectsData = [
   
     imageUrl: ragImg,
     githubUrl: "https://github.com/work-dump/pdfchat",
-    websiteUrl: "https://pdfchat-ragsys.streamlit.app/",
+    websiteUrl: "https://www.chatpdf.com/",
   },
   {
     title: "Bank Churn Predictor",
@@ -147,7 +147,7 @@ export const projectsData = [
     imageUrl: promptopiaImg,
     githubUrl: "https://github.com/work-dump/project_next_ai_prompt_sharing",
     websiteUrl:
-      "https://project-next-ai-prompt-sharing-git-main-github.com/work-dump.vercel.app/",
+      "https://project-next-ai-prompt-sharing-git-main-alekhandro24.vercel.app/",
   },
   
 ] as const;
