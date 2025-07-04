@@ -22,10 +22,6 @@ export const links = [
     hash: "#projects",
   },
   {
-    name: "Blogs",
-    hash: "#blog",
-  },
-  {
     name: "Skills",
     hash: "#skills",
   },
@@ -118,7 +114,7 @@ export const projectsData = [
   {
     title: "Lidar 3D Reconstruction",
     description:
-      "Developed a 3D reconstruction system using Lidar sensors mounted on a drone: SLAM, 3D visualization.",
+      "A 3D reconstruction system using Lidar sensors mounted on a drone: SLAM, 3D visualization.",
     tags: [
       "Lidar",
       "SLAM",

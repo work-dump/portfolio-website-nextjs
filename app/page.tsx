@@ -4,7 +4,7 @@ import Intro from "@/components/Intro";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Contact from "../components/Contact";
-import Blog from "@/components/Blog";
+// import Blog from "@/components/Blog";
 import Certifications from "@/components/Certifications";
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
       <div className="mb-24 sm:mb-40" />
       <About />
       <Projects />
-      <Blog />
+      {/* <Blog /> */}
       <Skills />
       <Experience />
       <Certifications />
